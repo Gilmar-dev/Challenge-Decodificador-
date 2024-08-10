@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logoalura" src="imagens/logo alura.png" alt="logo da alura">
+    </header>
+   <main>
+    <section>
+        <textarea class="text-area" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+        <div class="botoes">
+            <div class="informacao">
+                <h6>Apenas letras minusculas  e sem acentos.</h6>
+            </div>
+            <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
+            <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+        </div>
+    </section>
+
+    <section>
+        <textarea class="mensagem" cols="20" rows="10"></textarea>
+        <br><button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+    </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
